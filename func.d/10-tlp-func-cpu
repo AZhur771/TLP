@@ -146,8 +146,8 @@ set_cpu_perf_policy () {
     # --- intel_pstate
     # (a) energy-performance preference (EPP) in IA32_HWP_REQUEST MSR
     # (b) energy-performance bias (EPB) in IA32_ENERGY_PERF_BIAS MSR
-    # EPP and EPB are mutually exclusive: when EPP is available, EPB is
-    # not set because Intel CPUs will only honor EPP in that case
+    # EPP and EPB are mutually exclusive: when EPP is available,
+    # Intel CPUs will not honor EPB
     # --- amd_pstate
     # CPPC firmware via the Energy Performance Preference register
     # Note: needs a patchset not yet merged as of Linux 6.1, see [5]
